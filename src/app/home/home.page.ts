@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {Browser} from '@capacitor/browser';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +8,12 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  open() {
+    Browser.open({
+      url: 'https://www.google.com/',
+      toolbarColor: '#F0F4FF',
+      presentationStyle: 'fullscreen',
+    });
+  }
 
 }
