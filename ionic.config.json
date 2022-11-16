@@ -1,0 +1,7 @@
+{
+  "name": "test-browser-plugin",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
